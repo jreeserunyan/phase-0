@@ -54,3 +54,20 @@ I also found the video a little confusing. I assume it’s because I don’t kno
 
 
 # 1.4 Forking and Cloning Reflection
+
+To create a new repository in github, log in, go to the upper right corner (near your picture) and click the plus sign. Select repository. Give it a name. Make it public. Select MIT license. Then click create repository. Done. 
+
+Now, to fork a repository, go to your main page (github,com). On the upper left side, select the button where it shows your pic and your user name. Select the dashboard of the organization who has the repository you want.
+Find the repository you want and select the link. It will load a new page. Now you are looking at the master. Go to the upper right corner where it says “fork” and select it.
+Choose where you want the fork to go, most likely, your picture will be right there, so it’s pretty obvious. Now you have a copy of the repo on GitHub.
+
+If you want to add a repository on your own computer, (and you probably do) look down along the right side of the page to the little box that says “HTTPS clone URL” and copy the url shown there.
+Go to terminal and move to the directory where you want to place your repository.
+In my case, cd DBC/phase-0
+Then type git clone and the url that you saved to your clipboard.  And voila, you’ve got yourself a local repository!
+To see it’s contents, type ls or ls -lah to see the invisible files.
+Forking a repository allows you to have the same contents as the original so that you can make changes to it without altering the original. It means that multiple users can be making changes at the same time. It's great for sharing, building and editing code.
+
+At first, I had a little trouble deleting the local repo. Even though it didn’t make sense to me, the instructions I found seemed to be saying to go into the repo to delete it. And I was like “how can you delete something you are currently inside?” But I tried it that way anyway and of course, it didn’t work. So I went up a level and entered rm -rf nameofrepository and that worked.
+
+Version control tracks everything you do, but those aren’t commits. You don’t commit every single action, you wait until you have a collection of them. Committing every action would be like saving a different file for every single word that gets changed in a manuscript. When you commit, you submit a collection of all your changes and provide a note to give some context for what you have done. That way you and other users can look back over it and understand what had happened to the file. It is the equivalent of a “snapshot” in Photoshop, but better, because custom dictates a comment, so it’s easy to look back and see what changes have been made and why. It’s very interesting how github tracks and even notes with a heavier highlight the places where the lines are different.
