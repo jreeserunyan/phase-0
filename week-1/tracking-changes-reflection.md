@@ -26,5 +26,5 @@ A pull request confirms that your branch can be added back into the main repo wi
 Changes can be reviewed and tested before being added back into a master.
 
 ## Reflection
-ake a branch. Open the branch in Sublime. Make changes and save.
+Make a branch. Open the branch in Sublime. Make changes and save.
 Have git add your changed file to the staging ground for commits. Then commit and write a good note to give context to your changes. Push your changes to the remote repo. Pull them into the main branch from GitHub with a pull request. It seems more complex than it is. It's just a consistent way to share and organize files. Don't forget to delete the local branch.
