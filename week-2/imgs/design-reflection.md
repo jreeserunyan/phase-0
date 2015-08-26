@@ -3,7 +3,7 @@
 Why should we use relative paths?
 Because
 
-![Alt text](/imgs/site-map.png "Super simple site map")
+![SiteMap](site-map.png "Super simple site map")
 
 
 What are the 6 Phases of Web Design?
