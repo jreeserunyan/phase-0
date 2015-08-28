@@ -11,7 +11,7 @@ I think we used relative links since it's easier for links to be found when they
 * **Testing and Delivery** - Fine tune and publish site.
 * **Maintenance** - Work is never done! Keep site up to date and respond to user needs.
 
-![SiteMap](imgs/site-map.png "Super simple site map")
+![SiteMap](imgs/site-map.png "Super Simple Site Map")
 
 #### What is your site's primary goal or purpose? What kind of content will your site feature?
 To display my abilities and my personality, for professional use, to potential employers.
