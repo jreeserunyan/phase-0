@@ -1,7 +1,7 @@
 # Reflection on 2.3 *Introduction to Design and Site Planning*
 
 ####Why use relative links?
-I think we used relative links since it's easier for links to be found when they are in the same (or nearby) directory, it makes changes easier. If you were to move your directories into a different repo, and you had used an absolute path, it wouldn't be able to find your file beucase the link would send it looking in the old location. 
+I think we used relative links since it's easier for links to be found when they are in the same (or nearby) directory, it makes changes easier. If you were to move your directories, and you had used an absolute path, it wouldn't be able to find your file beucase the link would send it looking in the old location. 
 
 #### What are the 6 Phases of Web Design?
 * **Information Gathering** - Think about purpose, goal, audience and info.
