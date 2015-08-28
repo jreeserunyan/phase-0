@@ -30,7 +30,7 @@ In some ways, UXD is pretty theoretical, so it’s easy to see why some people m
 UXD can help websites attract the audience they desire, rather than sending them scurrying away after an unpleasant experience.
 
 ### Which parts of the challenge did you find tedious?
-I liked this challenge, though thinking about potential employers seems slightly impractical, since I don’t have any skills yet. :smiley: But if my pull request workflow works this time, the whole thing will be a success!
+I liked this challenge, though thinking about potential employers seems slightly impractical, since I don’t have any skills yet. :smirk: But if my pull request workflow works this time, the whole thing will be a success!
 
-###Success! :smirk:
+###Success! :smiley:
 I decided to edit this to celebrate completle success with git (which I was supposed to have understood days ago)!
