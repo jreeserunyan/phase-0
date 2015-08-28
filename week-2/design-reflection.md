@@ -1,5 +1,8 @@
 # Reflection on 2.3 *Introduction to Design and Site Planning*
 
+####Why use relative links?
+I think we used relative links since it's easier for links to be found when they are in the same (or nearby) directory, it makes changes easier. If you were to move your directories into a different repo, and you had used an absolute path, it wouldn't be able to find your file beucase the link would send it looking in the old location. 
+
 #### What are the 6 Phases of Web Design?
 * **Information Gathering** - Think about purpose, goal, audience and info.
 * **Planning** - Make site map. (See baisc site map below.)
@@ -22,7 +25,9 @@ See portfolio…but to get people interested in the portfolio, it would be good 
 #### What are the main things someone should know about design and user experience? What is user experience design and why is it valuable?
 Paraphrased from [one of the suggested sources](http://www.smashingmagazine.com/2010/10/what-is-user-experience-design-overview-tools-and-resources/ “UXD Overview”).
 “UX design is driven by user *feelings* when using a system. We can design for experiences and behaviors, but we can’t impose or predict the actual user experience. 
+
 Usability is about user-friendliness and efficiency. Usability is a part of UX. 
+
 In some ways, UXD is pretty theoretical, so it’s easy to see why some people might not want to give it to much thought, but those are the same people who likely think you can teach someone by hitting them over the head repeatedly.
 UXD can help websites attract the audience they desire, rather than sending them scurrying away after an unpleasant experience.
 
