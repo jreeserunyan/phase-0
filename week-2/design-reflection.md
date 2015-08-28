@@ -29,4 +29,4 @@ UXD can help websites attract the audience they desire, rather than sending them
 #### Which parts of the challenge did you find tedious?
 I liked this challenge, though thinking about potential employers seems slightly impractical, since I don’t have any skills yet. :smirk: But if my pull request workflow works this time, the whole thing will be a success!
 
-####Success!:smiley: I decided to edit this to celebrate completle success with git workflow (which I was supposed to have understood days ago)!
+####Success! :smiley: I decided to edit this to celebrate completle success with git workflow!
