@@ -21,7 +21,7 @@ I loved this challenge! But I know my way around *Adobe Illustrator*, so it was 
 
 I did a few iterations because it went pretty quickly. And I wanted to give myself some tricky stuff to figure out in html.
 
-I had an idea what it was before getting started.
-I still read over the articles provided and looked at the info about wire framing in *HTML&CSS* by Jon Duckett. 
+I had an idea of what wireframing was before getting started.
+I still liked the articles provided and found them interesting. I also looked at the info about wireframing in *HTML&CSS* by Jon Duckett. 
 
 This was totally in my comfort zone. Though, of course, I have no idea if I can actually do any part of it with html. So that might make me look back and wish I had gone with something more simple. Though I am looking forward to perfectly successful git workflow!
