@@ -1,17 +1,14 @@
 # Reflection on 2.3 *Introduction to Design and Site Planning*
 
-
+### What are the 6 Phases of Web Design?
+* **Information Gathering** - Think about purpose, goal, audience and info.
+* **Planning** - Make site map. (See baisc site map below.)
+* **Design** - Develop initial wireframes, prototypes and think critically about choices made so far and if you are on track with your original needs.
+* **Development** - Coding can begin!
+* **Testing and Delivery** - Fine tune and publish site.
+* **Maintenance** - Work is never done! Keep site up to date and respond to user needs.
 
 ![SiteMap](imgs/site-map.png "Super simple site map")
-
-
-### What are the 6 Phases of Web Design?
-* Information Gathering - Think about purpose, goal, audience and info.
-* Planning - Make site map. 
-* Design - Develop initial wireframes, prototypes and think critically about choices made so far and if you are on track with your original needs.
-* Development - Coding can begin!
-* Testing and Delivery - Fine tune and publish site.
-* Maintenance - Work is never done! Keep site up to date and respond to user needs.
 
 ### What is your site's primary goal or purpose? What kind of content will your site feature?
 To display my abilities and my personality, for professional use, to potential employers.
