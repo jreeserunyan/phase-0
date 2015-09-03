@@ -1,0 +1,109 @@
+/* {
+	border: 1pt solid black
+*/
+header, section, footer, aside, nav, article, figure, main {
+display: block;
+line-height: 1.0em;
+margin: 0px;}
+
+H1 {
+	font-size: 2em;
+}
+H2 {
+	font-size: 1.5em;
+}
+H3 {
+	font-size: 1em;
+}
+
+
+html {
+	background-color: white;
+	color: navy;
+}
+
+header {
+	font-size: 1em;
+	color: navy;
+	text-align: center;
+	font-weight: bold;
+}
+ 
+span {
+	font-size: 2em;
+}
+
+ a:link {
+ 	color: purple;
+ }
+
+ a:visited {
+ 	color: red;
+ }
+
+li {
+	padding: 1em;
+}
+
+#columns {
+	float: left;
+	width: 50%;
+	border-top: 1px solid black;
+}
+
+#columns2 {
+	float: right;
+	width: 50%;
+	border-top: 1px solid black;
+}
+
+section p {
+	font-size: 10px;
+	border-top: 1px solid black;
+	color: navy;
+	width: 100%;
+}
+
+figure {
+	text-align: center;
+	display: inline-block;
+
+}
+
+footer p {
+	font-size: 11px;
+
+}	
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+What tricks did you use to help you with positioning? 
+	How hard was it to get the site as you wanted it?
+What CSS did you use to modify the element style (like size, color, etc.)
+Did you modify the HTML to include classes or ids? 
+	If so, which did you chose and why? 
+	If you didn't, how would you know which one to add to your HTML?
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?*/
+1 {
+	font-size: 12px;
+	color: navy;
+}
+/*#columns2 {
+	float: right;
+	width: 50%;
+}
+p:nth-child(2) { background-color: teal; }
+img {
+	float; both;
+}
+
+section {
+	float: both;
+}*
+
+#footer {
+	width: 100%;
+	clear: both;
+}
+/*
+
