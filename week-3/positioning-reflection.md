@@ -1,31 +1,31 @@
 # 3.4 Chrome Dev Tools (Mandatory Pairing)
 
 1. Change the Colors
-[!colors](imgs/numberone.png)
+![colors](imgs/numberone.png)
 
 2. Column
-[!column] (imgs/numbertwo.png)
+![column] (imgs/numbertwo.png)
 
 3. Row
-[!row] (imgs/numberthree.png)
+![row] (imgs/numberthree.png)
 
 4. Make Equidistant
-[!equidistant] (imgs/numberfour.png)
+![equidistant] (imgs/numberfour.png)
 
 5. Squares
-[!squares] (imgs/numberfive.png)
+![squares] (imgs/numberfive.png)
 
 6. Footer
-[!footer] (imgs/numbersix.png)
+![footer] (imgs/numbersix.png)
 
 7. Header
-[!header] (imgs/numberseven.png)
+![header] (imgs/numberseven.png)
 
 8. Sidebar
-[!sidebar] (imgs/numbereight.png)
+![sidebar] (imgs/numbereight.png)
 
 9. Get Creative
-[!Get Creative] (imgs/numbernine.png)
+![Get Creative] (imgs/numbernine.png)
 
 
 ####How can you use Chrome's DevTools inspector to help you format or position elements?
