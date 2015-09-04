@@ -1,7 +1,7 @@
 # 3.4 Chrome Dev Tools (Mandatory Pairing)
 
 1. Change the Colors
-[!colors] (imgs/numberone.png)
+[!colors](imgs/numberone.png)
 
 2. Column
 [!column] (imgs/numbertwo.png)
