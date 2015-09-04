@@ -1,11 +1,16 @@
 /* {
 	border: 1pt solid black
-*/
-header, section, footer, aside, nav, article, figure, main {
+
+header, section, footer, article, figure, main {
 display: block;
 line-height: 1.0em;
-margin: 0px;}
+padding: 5%;}
 
+
+* {
+	border: 1pt solid black
+}
+*/
 H1 {
 	font-size: 2em;
 }
@@ -59,7 +64,6 @@ li {
 
 section p {
 	font-size: 10px;
-	border-top: 1px solid black;
 	color: navy;
 	width: 100%;
 }
@@ -75,6 +79,9 @@ footer p {
 
 }	
 
+#bottom{
+
+}
 /*
 What is important to know when linking an external file (like a stylesheet) to an HTML file?
 What tricks did you use to help you with positioning? 
