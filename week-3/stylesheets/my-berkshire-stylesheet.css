@@ -1,22 +1,11 @@
-/* {
-	border: 1pt solid black
-
-header, section, footer, article, figure, main {
-display: block;
-line-height: 1.0em;
-padding: 5%;}
-
-
-* {
-	border: 1pt solid black
-}
-*/
 H1 {
 	font-size: 2em;
 }
+
 H2 {
 	font-size: 1.5em;
 }
+
 H3 {
 	font-size: 1em;
 }
@@ -71,46 +60,35 @@ section p {
 figure {
 	text-align: center;
 	display: inline-block;
-
 }
 
 footer p {
 	font-size: 11px;
-
 }	
 
-#bottom{
-
-}
 /*
 What is important to know when linking an external file (like a stylesheet) to an HTML file?
-What tricks did you use to help you with positioning? 
-	How hard was it to get the site as you wanted it?
+> You have to know where the files are in relation to each other and names.
+
+What tricks did you use to help you with positioning?
+> I wasn't quite able to get everything in the right place. I was trying to use floats, but I need to research more. 
+Working on this made me realize that I need to figure out how to organize my css. I found this https://github.com/necolas/idiomatic-css.
+I want to use it as a guide for my future projects. 
+I want to try it here, but I am timeboxing and I've spent all the time I alloted to this project.
+
+How hard was it to get the site as you wanted it?
+Some parts were easy, but I really got stuck on the horizontal rules that shouldn't be <hr>s. 
+I was able to put in one by adding a border to to the top of one ruleset, but it was messy when I tried to do that other places.
+
 What CSS did you use to modify the element style (like size, color, etc.)
+I am not sure I understand this question. I used display: inline-block; and text-align: center; to center the image. And some floats left and right.
+
 Did you modify the HTML to include classes or ids? 
 	If so, which did you chose and why? 
+	We added a div id to the columns so that we didn't have to waste a lot of time making a table.
 	If you didn't, how would you know which one to add to your HTML?
-When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?*/
-1 {
-	font-size: 12px;
-	color: navy;
-}
-/*#columns2 {
-	float: right;
-	width: 50%;
-}
-p:nth-child(2) { background-color: teal; }
-img {
-	float; both;
-}
-
-section {
-	float: both;
-}*
-
-#footer {
-	width: 100%;
-	clear: both;
-}
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I didn't like their site. It was pretty ugly and pretty badly put together. 
+They missed semantic elements and made inline styles in the html (I'm not sure if I said that right).*/
 /*
 
