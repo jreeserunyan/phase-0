@@ -1,4 +1,4 @@
-require_relative "my_solution"
+  require_relative "my_solution"
 
 describe 'leap_year?' do
   it 'is defined as a method' do

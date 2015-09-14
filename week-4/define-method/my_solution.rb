@@ -3,7 +3,7 @@ def do_something(var1, var2, var3)
 
 end
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: no help from anyone!].
 
 
 # Your Solution Below

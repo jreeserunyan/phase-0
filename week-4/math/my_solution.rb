@@ -1,0 +1,19 @@
+# Math Methods
+# I worked on this challenge [by myself, with: all by my lonesome].
+# Your Solution Below
+
+def add(num_1, num_2)
+ p num_1 + num_2
+end
+
+def subtract(num_1, num_2)
+ p num_1 - num_2
+end
+
+def multiply(num_1, num_2)
+  p num_1 * num_2
+end
+
+def divide(num_1, num_2)
+  p num_1 / num_2
+end

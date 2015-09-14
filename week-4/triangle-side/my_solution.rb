@@ -1,7 +1,6 @@
-# I worked on this challenge [by myself, with: ].
-
-
+# I worked on this challenge [by myself, with: George and Lauren M].
 # Your Solution Below
+
 def valid_triangle?(a, b, c)
 	# no zero sides
 	if 	(a == 0) || (b == 0) || (c == 0)
@@ -21,7 +20,7 @@ def valid_triangle?(a, b, c)
   	elsif (a == b) && (b == c)   		
   		p true
 
-  	#isosceles	
+  #isosceles	
   	elsif (a == b) && (a + b > c)
   		p true
 
@@ -37,9 +36,3 @@ def valid_triangle?(a, b, c)
 
   	end
 end
-
-
-
-
-# 	end
-# end

@@ -1,8 +1,5 @@
 # Leap Years
-
-# I worked on this challenge [by myself, with: ].
-
-
+# I worked on this challenge [by myself, with: George and Lauren M.].
 # Your Solution Below
 
 def leap_year? (year)
