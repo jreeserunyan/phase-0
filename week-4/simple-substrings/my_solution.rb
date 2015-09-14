@@ -1,8 +1,5 @@
 # Simple Substrings
-
-# I worked on this challenge [by myself, with: ].
-
-
+# I worked on this challenge [by myself, with: George and Lauren].
 # Your Solution Below
 def welcome(address)
 	if address .include?("CA")
