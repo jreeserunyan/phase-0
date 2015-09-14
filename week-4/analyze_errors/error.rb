@@ -179,4 +179,5 @@
 # #### Were you able to determine why each error message happened based on the code? 
 # Yep.
 # #### When you encounter errors in your future code, what process will you follow to help you debug?
-# Look for the line number and where the error is located. Check the returned error message and work things out. I can’t tell if less intentional errors will be harder to sort out, but I bet most can be illuminated with a quick search. And those additional resource links will probably come in handy.
+# Look for the line number and where the error is located. Check the returned error message and work things out. 
+# I can’t tell if less intentional errors will be harder to sort out, but I bet most can be illuminated with a quick search.
