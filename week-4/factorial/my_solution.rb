@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Lauren M. ].
 
 
 # Your Solution Below
@@ -10,14 +10,3 @@ def factorial(num)
 end
 
 
-# def factorial(n)
-#    x = 1
-# # create loop?
-#   until n <= 1
- 
-#   x = (x * n) 
-#   n = (n - 1) 
-
-#   end
-#   return x
-# end
