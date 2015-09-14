@@ -41,8 +41,10 @@ If you re-define a variable, the first assignment is forgotten as soon as it rea
 A variable can point to any object not just strings.
 
 ##### Links
-[Defining Variables](https://github.com/jreeserunyan/phase-0/blob/master/week-4/defining-variables.rb)  |  
-[Simple String Methods](https://github.com/jreeserunyan/phase-0/blob/master/week-4/simple-string.rb)  |  
+[Defining Variables](https://github.com/jreeserunyan/phase-0/blob/master/week-4/defining-variables.rb)
+
+[Simple String Methods](https://github.com/jreeserunyan/phase-0/blob/master/week-4/simple-string.rb)
+
 [Local Variables and Basic Arithmetical Operations](https://github.com/jreeserunyan/phase-0/blob/master/week-4/basic-math.rb)
 
 This reflection:[nums-letters.md](https://github.com/jreeserunyan/phase-0/blob/master/week-4/nums-letters.md) 
