@@ -1,0 +1,1000 @@
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux-gnu] 
+Everyone can modify this shell in real time. 
+It's a sandbox that works exactly like a native shell. 
+ 
+[1] 2.2.3 > def basket 
+[1] 2.2.3 *   [] 
+[1] 2.2.3 * end 
+:basket 
+[2] 2.2.3 > my_basket = basket 
+[] 
+[3] 2.2.3 > my_basket 
+[] 
+------------------------------------- 
+Jamie Runyan running 44 lines of Ruby 
+------------------------------------- 
+ 
+ 
+------------------------------------- 
+Jamie Runyan running 46 lines of Ruby 
+------------------------------------- 
+ 
+ 
+------------------------------------- 
+Jamie Runyan running 46 lines of Ruby 
+------------------------------------- 
+{} 
+ 
+------------------------------------- 
+Jamie Runyan running 50 lines of Ruby 
+------------------------------------- 
+{} 
+ 
+------------------------------------- 
+Jamie Runyan running 51 lines of Ruby 
+------------------------------------- 
+{} 
+From: /home/coderpad/solution.rb @ line 50 : 
+ 
+    45: print create_list 
+    46: 
+    47: def add_list(item, qty) 
+    48:   hash[item] = qty 
+    49: end 
+ => 50: add_list(bread, 10) 
+    51: print hash 
+ 
+NameError: undefined local variable or method `bread' for main:Object 
+from solution.rb:50:in `<main>' 
+------------------------------------- 
+Jamie Runyan running 51 lines of Ruby 
+------------------------------------- 
+{} 
+From: /home/coderpad/solution.rb @ line 48 Object#add_list: 
+ 
+    47: def add_list(item, qty) 
+ => 48:   hash[item] = qty 
+    49: end 
+ 
+NoMethodError: undefined method `[]=' for -1136908995290953059:Fixnum 
+from solution.rb:48:in `add_list' 
+[1] 2.2.3 > def my_method 
+[1] 2.2.3 *   my_variable = "caroline" 
+[1] 2.2.3 * end 
+:my_method 
+[2] 2.2.3 > my_variable 
+NameError: undefined local variable or method `my_variable' for main:Object
+from (pry):4:in `add_list' 
+------------------------------------- 
+Jamie Runyan running 53 lines of Ruby 
+------------------------------------- 
+ 
+From: /home/coderpad/solution.rb @ line 52 : 
+ 
+    47:   list[item] = qty 
+    48: end 
+    49: 
+    50: 
+    51: grocery_list = create_list 
+ => 52: add_list("bread", 10) 
+    53: print my_hash 
+ 
+ArgumentError: wrong number of arguments (2 for 3) 
+from solution.rb:46:in `add_list' 
+[1] 2.2.3 > Hash.new 
+{} 
+[2] 2.2.3 > test = Hash.new 
+{} 
+------------------------------------- 
+Jamie Runyan running 53 lines of Ruby 
+------------------------------------- 
+ 
+From: /home/coderpad/solution.rb @ line 52 : 
+ 
+    47:   list[item] = qty 
+    48: end 
+    49: 
+    50: 
+    51: grocery_list = create_list 
+ => 52: add_list("bread", 10) 
+    53: print my_hash 
+ 
+ArgumentError: wrong number of arguments (2 for 3) 
+from solution.rb:46:in `add_list' 
+[1] 2.2.3 > test["bread"] = 10 
+ArgumentError: wrong number of arguments (0 for 2..3) 
+from (pry):1:in `test' 
+[2] 2.2.3 > test = {} 
+{} 
+[3] 2.2.3 > 
+[4] 2.2.3 > test["bread"] = 10 
+10 
+--------------------------------- 
+Caroline running 54 lines of Ruby 
+--------------------------------- 
+Hash 
+ 
+ 
+------------------------------------- 
+Jamie Runyan running 53 lines of Ruby 
+------------------------------------- 
+ 
+ 
+[1] 2.2.3 > print grocery_list 
+{"bread"=>10}nil 
+------------------------------------ 
+Nathan Park running 64 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 52 Object#remove_item: 
+ 
+    51: def remove_item (list, item) 
+ => 52:   list.remove(item) 
+    53:   list 
+    54: end 
+ 
+NoMethodError: undefined method `remove' for {"bread"=>10}:Hash 
+from solution.rb:52:in `remove_item' 
+------------------------------------ 
+Nathan Park running 67 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 52 Object#remove_item: 
+ 
+    51: def remove_item (list, item) 
+ => 52:   list.remove(item) 
+    53:   list 
+    54: end 
+ 
+NoMethodError: undefined method `remove' for {"bread"=>10, "cereal"=>100, "
+milk"=>200}:Hash 
+from solution.rb:52:in `remove_item' 
+------------------------------------ 
+Nathan Park running 67 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 52 Object#remove_item: 
+ 
+    51: def remove_item (list, item) 
+ => 52:   list.remove(item) 
+    53:   list 
+    54: end 
+ 
+NoMethodError: undefined method `remove' for {"bread"=>10, "cereal"=>100, "
+milk"=>200}:Hash 
+from solution.rb:52:in `remove_item' 
+------------------------------------ 
+Nathan Park running 67 lines of Ruby 
+------------------------------------ 
+ 
+ 
+[1] 2.2.3 > grocery_list 
+{ 
+     "bread" => 10, 
+    "cereal" => 100, 
+      "milk" => 200 
+} 
+[2] 2.2.3 > grocery_list.remove("bread") 
+NoMethodError: undefined method `remove' for {"bread"=>10, "cereal"=>100, "
+milk"=>200}:Hash 
+from (pry):2:in `<main>' 
+[3] 2.2.3 > grocery_list.delete("bread") 
+10 
+[4] 2.2.3 > grocery_list 
+{ 
+    "cereal" => 100, 
+      "milk" => 200 
+} 
+------------------------------------ 
+Nathan Park running 67 lines of Ruby 
+------------------------------------ 
+ 
+ 
+[1] 2.2.3 > groacery_list 
+NameError: undefined local variable or method `groacery_list' for main:Obje
+ct 
+from (pry):1:in `<main>' 
+[2] 2.2.3 > grocery_list 
+{ 
+    "cereal" => 100, 
+      "milk" => 200 
+} 
+------------------------------------ 
+Nathan Park running 73 lines of Ruby 
+------------------------------------ 
+ 
+ 
+------------------------------------ 
+Nathan Park running 75 lines of Ruby 
+------------------------------------ 
+ 
+ 
+------------------------------------ 
+Nathan Park running 75 lines of Ruby 
+------------------------------------ 
+ 
+ 
+------------------------------------ 
+Nathan Park running 75 lines of Ruby 
+------------------------------------ 
+ 
+ 
+[1] 2.2.3 > grocery_list 
+{ 
+     "Tomatoes" => 3, 
+       "Onions" => 1, 
+    "Ice Cream" => 1 
+} 
+------------------------------------ 
+Nathan Park running 76 lines of Ruby 
+------------------------------------ 
+ 
+ 
+------------------------------------ 
+Nathan Park running 80 lines of Ruby 
+------------------------------------ 
+ 
+ 
+------------------------------------ 
+Nathan Park running 80 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 62 Object#print_list: 
+ 
+    61: def print_list 
+ => 62:   print grocery_list 
+    63: end 
+ 
+NameError: undefined local variable or method `grocery_list' for main:Objec
+t 
+from solution.rb:62:in `print_list' 
+------------------------------------ 
+Nathan Park running 80 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 62 Object#print_list: 
+ 
+    61: def print_list 
+ => 62:   p grocery_list 
+    63: end 
+ 
+NameError: undefined local variable or method `grocery_list' for main:Objec
+t 
+from solution.rb:62:in `print_list' 
+------------------------------------ 
+Nathan Park running 80 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 80 : 
+ 
+    75: 
+    76: # 4) update quantities for items 
+    77: grocery_list = update_list(grocery_list, "Ice Cream", 1) 
+    78: 
+    79: # 5) print list 
+ => 80: print_list 
+ 
+ArgumentError: wrong number of arguments (0 for 1) 
+from solution.rb:61:in `print_list' 
+------------------------------------ 
+Nathan Park running 80 lines of Ruby 
+------------------------------------ 
+{"Tomatoes"=>3, "Onions"=>1, "Ice Cream"=>1} 
+ 
+ 
+------------------------------------ 
+Nathan Park running 82 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 63 Object#print_list: 
+ 
+    61: def print_list (list) 
+    62:   list.each do |key,value| 
+ => 63:     p key.to_s + '' + value 
+    64:   end 
+    65: end 
+ 
+TypeError: no implicit conversion of Fixnum into String 
+from solution.rb:63:in `+' 
+------------------------------------ 
+Nathan Park running 82 lines of Ruby 
+------------------------------------ 
+"Tomatoes3" 
+"Onions1" 
+"Ice Cream1" 
+ 
+ 
+------------------------------------ 
+Nathan Park running 82 lines of Ruby 
+------------------------------------ 
+"Tomatoes: 3" 
+"Onions: 1" 
+"Ice Cream: 1" 
+ 
+ 
+------------------------------------ 
+Nathan Park running 82 lines of Ruby 
+------------------------------------ 
+ 
+From: /home/coderpad/solution.rb @ line 63 Object#print_list: 
+ 
+    61: def print_list (list) 
+    62:   list.each do |key,value| 
+ => 63:     p key.to_s + ': ' + value.to_s.rjust 
+    64:   end 
+    65: end 
+ 
+ArgumentError: wrong number of arguments (0 for 1..2) 
+from solution.rb:63:in `rjust' 
+------------------------------------ 
+Nathan Park running 82 lines of Ruby 
+------------------------------------ 
+"Tomatoes: 3" 
+"Onions: 1" 
+"Ice Cream: 1" 
+ 
+ 
+[1] 2.2.3 > grocery_list.remove_item(grocery_list.Onions) 
+NoMethodError: undefined method `Onions' for {"Tomatoes"=>3, "Onions"=>1, "
+Ice Cream"=>1}:Hash 
+from (pry):1:in `<main>' 
+[2] 2.2.3 > grocery_list.remove_item(grocery_list,"Onions") 
+NoMethodError: private method `remove_item' called for {"Tomatoes"=>3, "Oni
+ons"=>1, "Ice Cream"=>1}:Hash 
+from (pry):2:in `<main>' 
+[3] 2.2.3 >   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
