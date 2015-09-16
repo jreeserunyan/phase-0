@@ -1,0 +1,22 @@
+Were you successful in breaking the problem down into small steps?
+
+I am getting better.  To start with, this time, i tired to rephrase the exercise itself in non-Ruby terms.  It’s lengthy, it’s awkward and you can immediately see why code is written the way it is.  That was sort of nifty.
+
+
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+
+Honestly, I over-wrote my pseudocode. I did it on purpose and it was really helpful to me in understanding what was actually being asked for. I would be surprised if anyone else could make sense of it. (Well, maybe a linguist.)
+
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+I was lucky enough to be paired with someone who had a good idea of what was going on, so we moved very smoothly, for the most part.
+
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+Not really, or perhaps, not yet. Our initial was pretty good.  I feel like I could do a bit more refactoring to the non-destructive version. I want a little space from it before going back.
+
+How readable is your solution? Did you and your pair choose descriptive variable names? Relatively. What is a descriptive variable? Did we ever talk about that. It’s an issue that drives me crazy. If it means having an array called array with elements called arr1, arr2 and arr3, I understand how that may be useful eventually, but right now, for me, it’s not descriptive.  It’s redundant.
+
+
+What is the difference between destructive and non-destructive methods in your own words?
+BANG. Beware.  The result of a destructive method overwrites the new original. The old info is gone, never to be found by other parts of a program. They are useful in big projects, making things cleaner and less redundant, but they are also scary. You have changed your source. It’s gone.
+
+Non-destructive methods leave the source alone. They essentially duplicate the source, leave it there to be stolid and consistent, and move forward with the duplicate where they can make any modifications they want without impacting anything else. (So, my fellow GitHub users, remind you of anything? Or is that just me?)
