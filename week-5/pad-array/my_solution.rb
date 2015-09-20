@@ -21,20 +21,28 @@ If the minimum size is less than or equal to the the length of the ordered list,
 # 0. Pseudocode
 
 # What is the input?
-an unordered list, a minimum number of elements in the list, and someting that represents what should happen when there is nothing in the ordered list(pad?).
+# an unordered list, a minimum number of elements in the list, and someting that represents what should happen when there is nothing in the ordered list(pad?).
 
-# What is the output? (i.e. What should the code return?)
-For the destructive procedure, we want to get back an altered list, which has replaced the previous list.
-For the non-destructive procedure, we want to see a new ordered list.
+# # What is the output? (i.e. What should the code return?)
+# For the destructive procedure, we want to get back an altered list, which has replaced the previous list.
+# For the non-destructive procedure, we want to see a new ordered list.
+# # What are the steps needed to solve the problem?
+# create method block with the name pad!
+# name variables to represent: (the ordered list NAMED array, minimum number of elements NAMED min_size, number of elements equals none NAMED value = nil)
+# ask if the min_size of the array length is greater than, or equal to min_size and is also greater thano or equal to O.
+# if it is, compute and print the result.
+# If the min_size is not >=, AND the array is less than the accepted minimum, push the "pad" value into the array.
+
+
+# return the original array.
+
+# What is the input? A destructive method and non destructive method, each method accepts an array , and a 
+#min size of an array non minimum size
+# What is the output? (i.e. What should the code return?) if the array's length is less than the minimum size, #
+#pad should return a new array padded with the pad value up to the minimum size.
 # What are the steps needed to solve the problem?
-create method block with the name pad!
-name variables to represent: (the ordered list NAMED array, minimum number of elements NAMED min_size, number of elements equals none NAMED value = nil)
-ask if the min_size of the array length is greater than, or equal to min_size and is also greater thano or equal to O.
-if it is, compute and print the result.
-If the min_size is not >=, AND the array is less than the accepted minimum, push the "pad" value into the array.
-
-
-return the original array.
+#(destructive)check with an if statement the length of the array using .length
+#using && compare if the length it's less than minimum size , return the array.
 
 # 1. Initial Solution
 def pad!(array, min_size, value = nil) #destructive
