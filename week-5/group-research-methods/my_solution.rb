@@ -1,9 +1,12 @@
 # Research Methods
 
 # I spent [] hours on this challenge.
+# i_want_pets [2, 3, "I", "but", "have", "only", "pets", "want"]
+# alt hash for person 3
+my_family_pets_ages = [["Annabelle", 0], ["Ditto", 2], ["Hoobie", 3], ["Bogart", 4], ["Poly", 5], ["Evi", 6], ["George", 12]]
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
-my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
+# my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
@@ -33,15 +36,29 @@ end
 #
 #
 
-
 # Person 3
-def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# psuedocode
+# input: collection contatining an ordered list
+# output: new alphatbetized list
+#   -define array
+#   -convert all elements to strings
+#   -sort with enumberable
+# return list
+
+
+def my_array_sorting_method(i_want_pets)
+  i_want_pets.sort_by do |item| 
+    item.to_s
 end
 
-def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
+puts my_array_sorting_method(i_want_pets)
+
+
+def my_hash_sorting_method(my_family_pets_ages)
+  my_family_pets_ages.sort_by { |x, y| y }
+end
+puts my_hash_sorting_method(my_family_pets_ages)
 
 # Identify and describe the Ruby method(s) you implemented.
 #
