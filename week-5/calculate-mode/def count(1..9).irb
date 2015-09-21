@@ -1,4 +1,0 @@
-def count(1..9)
-count.each do |n| n+5
-end
-end
