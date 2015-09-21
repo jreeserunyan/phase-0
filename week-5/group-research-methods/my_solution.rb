@@ -38,11 +38,11 @@ end
 
 # Person 3
 # psuedocode
-# input: collection contatining an ordered list
-# output: new alphatbetized list
+# input: collection containing an ordered list
+# output: new alphabetized list
 #   -define array
 #   -convert all elements to strings
-#   -sort with enumberable
+#   -sort, enumerable
 # return list
 
 
@@ -61,9 +61,12 @@ end
 puts my_hash_sorting_method(my_family_pets_ages)
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# Ultimately, I went pretty simple. I've been trying to use Sort_by practically since the first ruby challenge.  It sorts using keys created by mapping values, so it was well suited to this.
+# So, we have the array 
+# to_s - to get strings from each item.
+# and sort_by fills the gap.
+# for the hash, it sorts by either key or value, we were looking for age, so I sorted by value.
+# Sorry! these aren't very helpful instructions. Out of time.
 
 
 # Person 4
