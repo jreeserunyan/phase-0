@@ -61,21 +61,18 @@ p mode(array)
 # We created a hash because we knew we were going to need to make key-value pairs in order to sort.
 # The hash starts off empty.
 # We iterated through the array so that every time a key is encountered it notes the value and adds 1 to it.
-
 # Then there is max, and if value is equal to max, then produce another array with .keys
 
 # Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? 
-# Yes. 
-# # What issues/successes did you run into when translating your pseudocode to code?
+# Yes. Much better.
+
+# What issues/successes did you run into when translating your pseudocode to code?
 # And most of the time when we were going down the wrong track, if we had looked back at our pseudocode, we would have been better off.
-# # What methods did you use to iterate through the content? 
 
-# Did you find any good ones when you were refactoring? 
-# Were they difficult to implement?
+# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+# each_with_object was easy to implement and pretty nifty. 
+# I had seen it when looking up info about hashes and made a note of it, it only took a minute to work it in.
 
-
-
-# roboto irb
 
 
 
