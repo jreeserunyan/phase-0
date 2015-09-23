@@ -9,7 +9,16 @@
 # Input:
 # Output:
 # Steps:
+define instance method GuessingGame#guess
+use guess as Input
+guess should 
+	if guess > answer return :high
+	if guess = answer return :correct
+	if guess < answer return :low
 
+define instance method GuessingGgame#solved?
+	return true if most recent guess is correct
+	return false otherwise
 
 # Initial Solution
 
