@@ -45,7 +45,7 @@ class Die
 	attr_reader :sides
 
   def roll
-    @sides.sample
+    rand(1..@sides)
   end
 end
 
