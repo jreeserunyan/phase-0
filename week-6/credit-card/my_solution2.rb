@@ -18,9 +18,10 @@
 # 		starting with second to last index
 # 		double each element as directed above
 
-# Find sum of ALL digits and separate
+# Find double digits
 # 	separate double digits into single digits
-# 	add all elements
+
+# Add all digits
 
 # check validation
 # 	take digit sum above is equal to multiple of 10
@@ -35,8 +36,9 @@
 class CreditCard
 
 	def initialize(digits)
+		puts "Preparing to validate credit card..."
 		@digits = digits
-			raise ArgumentError.new("Error: please enter 16 digits") if @digits != 16
+			raise ArgumentError.new("Error: please enter 16 digits to check validation") unless @digits == 16
 	end
 
 	def check_card
@@ -45,24 +47,52 @@ class CreditCard
 
 	def separate_array
 		separate = @digits.to_s.split("")
-		separate.map! {|integertwo| integertwo.to_i }
+		separate.map! {|num| num.to_i }
 	end
 
 	def doubles(separate)
-		@doubles = digits.each.at(-2).step(2) { |integer| p integer + integer }
+		@doubles = digits.each.at(-2).step(2) 
+		puts "#{doubles}"
 	end
-	
-	def separate_array
-		separate.join.split("").map{|integertwo| integertwo.to_i }
-	end
-
-	def validate
-		separate_array(doubles(separate)) % 10 == ?
-		((separate_array / 10) -1) :
-		(separate_array / 10)
-	end
-
 end
+
+test1 = CreditCard.new(1234567891011121)
+digits = 1234567891011121
+# puts test1.check_card
+
+
+	# def validate
+	# 	separate_array(doubles(separate)) % 10 == 0 ?
+	# 	((separate_array / 10) -1) :
+	# 	(separate_array / 10)
+	# end
+
+	# def separate_array
+	# 	separate = @digits.to_s.split("")
+	# 	separate.map! {|integertwo| integertwo.to_i }
+	# end
+
+	
+	
+	# def separate_array
+	# 	separate.join.split("").map{|integertwo| integertwo.to_i }.reduce(:+)
+	# end
+
+
+
+# end
+
+# puts CreditCard.instance_method(:initialize).arity == 1
+
+# puts CreditCard.instance_method(:check_card).arity == 0
+
+# card1 = CreditCard.new(4408041234567893)
+
+# card2 = CreditCard.new(4408041234567892)
+
+# puts card1.check_card == true
+
+# puts card2.check_card == false
 	# def validate
 	# 	valid = @sum % 10 == ?
 	# 	((@sum / 10) -1) :
