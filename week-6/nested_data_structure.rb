@@ -55,12 +55,12 @@
 
 # # Bonus:
 
-# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
-# newnames = startup_names.flatten(3).each {|biz| puts biz + "ly "}
+startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+newnames = startup_names.flatten(3).each {|biz| puts biz + "ly "}
 
 
 # # revised bonus
-# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]].each.to_s {|biz| puts biz + "ly "}
+# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]].each.to_s {|biz| print biz + "ly "}
 
 
 
