@@ -102,6 +102,13 @@ end
 # Reflection
 
 What was the most difficult part of this challenge for you and your pair?
+I had something that passed all the tests at one point. 
+But I can't find it anymore, so I clearly didn't fully understand it.
+This project started really well, but when our initial logic didn't work out, 
+I never fully managed to accept that my original ideas were wrong. != makes sense. What am I missing?
 What new methods did you find to help you when you refactored?
-What concepts or learnings were you able to solidify in this challenge?
+I tried too many things and lost my original. Should if have been unless?
+What concepts or learnings were you able to solidify in this challenge? I know that length and count are exactly the same. 
+I know that regexp aren't the best way to deal with this.
+(Though they would be useful in determining if the card was valid for VISA, MasterCard, ect.)
 =end
