@@ -1,4 +1,4 @@
-require_relative 'my_solution2'
+require_relative 'my_solution4'
 
 describe CreditCard do
   describe '#initialize' do
