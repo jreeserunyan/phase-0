@@ -45,14 +45,20 @@ class CreditCard
 		validate
 	end
 
-	# def separate_array
-	# 	separate = @digits.to_s.split("")
-	# 	separate.map! {|num| num.to_i }
-	# end
+	def separate_array
+		separate = @digits.to_s.split("")
+		separate.map! {|num| num.to_i }
+	end
 
-	# def doubles(separate)
-	# 	@doubles = digits.each.at(-2).step(2) 
-	# 	puts "#{doubles}"
+
+# my_first_regex = /\d{2}\b/
+# puts my_regex.class
+
+# puts digits.gsub(\d{2}\b)
+
+# 	def doubles(separate)
+# 		@doubles = /\d{2}\b/ 
+# 		puts "#{doubles}"
 	# end
 end
 
