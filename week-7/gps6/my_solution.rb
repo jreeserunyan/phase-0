@@ -14,7 +14,7 @@
 require_relative 'state_data'
 
 class VirusPredictor
-attr_reader :population_density, :population
+attr_reader :population_density, :population, :state
 
 # set up instance variables for class VirusPredictor
 # defines what arguments will be accepted
@@ -26,71 +26,44 @@ attr_reader :population_density, :population
 
 # public way of calling two methods to calculate our virus effects
   def virus_effects
-      generate_report
+    puts "#{state} will lose #{predicted_deaths} people in this outbreak and will spread across the state in #{speed_of_spread} months.\n"
   end
 
-#  start of private 
-private
-
-  def generate_report
-    print "#{@state} will lose #{predicted_deaths} people in this outbreak"
-    puts " and will spread across the state in #{speed_of_spread} months.\n\n"
-  end
-
+#  start of private
+  private
 # checking the size of the population density and calculate the number of deaths based on that density.
 # .floor (rounds down)
   def predicted_deaths
     # predicted deaths is solely based on population density
     case population_density
-      when population_density >= 200 then (population * 0.4).floor
-      when population_density >= 150 then (population * 0.3).floor
-      when population_density >= 100 then (population * 0.2).floor
-      when population_density >= 50 then (population * 0.1).floor
-      else (population * 0.05).floor
+      when 0..49 then (population * 0.05).floor
+      when 50..99 then (population * 0.1).floor
+      when 100..149 then (population * 0.2).floor
+      when 150..199 then (population * 0.3).floor
+      else (population * 0.4).floor
     end
-  
   end
 
 # finding speed of spread, calculating how fast it will spread based only on density.
-  def speed_of_spread #in months
-    speed = 0.0
-    case population_density 
-      when population_density >= 200 then speed += 0.5
-      when population_density >= 150 then speed += 1
-      when population_density >= 100 then speed += 1.5
-      when population_density >= 50 then speed += 2
-      else speed += 2.5
+  def speed_of_spread
+    case population_density
+      when 0..49 then 2.5
+      when 50..99 then 2
+      when 100..149 then 1.5
+      when 150..199 then 1
+      else 0.5
     end
- 
-    speed
-
   end
-
 end
 
 #=======================================================================
 
 # DRIVER CODE
- # initialize VirusPredictor for each state
-# makes a new instance of the virus predicutor class for each state and calls virus effects method on it.
-
-# alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-# alabama.virus_effects
-
-# jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-# jersey.virus_effects
-
-# california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-# california.virus_effects
-
-# alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-# alaska.virus_effects
-
+# initialize VirusPredictor for each state
 STATE_DATA.each do |state_name, state_info|
   state = VirusPredictor.new(state_name, state_info[:population_density], state_info[:population])
   state.virus_effects
   end
-
 
 =begin
 #=======================================================================
