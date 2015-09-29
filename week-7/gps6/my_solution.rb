@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [by myself, Jamie Runyan with: David O'Keefe ].
+# We spent [1.2] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # Require_relative - it needs a file that will be stored in the same location.
@@ -17,7 +17,7 @@ class VirusPredictor
 attr_reader :population_density, :population
 
 # set up instance variables for class VirusPredictor
-# defines what arguemnts will be accepted
+# defines what arguments will be accepted
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
@@ -37,7 +37,7 @@ private
     puts " and will spread across the state in #{speed_of_spread} months.\n\n"
   end
 
-# checking the size of the popluation density and calculate the number of deaths based on that density.
+# checking the size of the population density and calculate the number of deaths based on that density.
 # .floor (rounds down)
   def predicted_deaths
     # predicted deaths is solely based on population density
@@ -51,10 +51,8 @@ private
   
   end
 
-# finding speed of spread, calcuating how fast it will spread based only on density.
+# finding speed of spread, calculating how fast it will spread based only on density.
   def speed_of_spread #in months
-    # We are still perfecting our formula here. The speed is also affected
-    # by additional factors we haven't added into this functionality.
     speed = 0.0
     case population_density 
       when population_density >= 200 then speed += 0.5
@@ -94,6 +92,22 @@ STATE_DATA.each do |state_name, state_info|
   end
 
 
-
+=begin
 #=======================================================================
 # Reflection Section
+What are the differences between the two different hash syntaxes shown in the state_data file?
+  The first hash contains the second, which doesn't use arrows. Basically the value of the first hash is another hash.
+
+What does require_relative do? How is it different from require?
+  Require relative looks for a file with that name in the same location as the file. Require would need an exact path.
+
+What are some ways to iterate through a hash?
+  .each still seems like king. Map (which is the same as collect) is also pretty useful but creates .
+
+When refactoring virus_effects, what stood out to you about the variables, if anything? 
+We didn't need all the parameters, the instance variables take care of it.
+
+What concept did you most solidify in this challenge?
+  I got a comment in some bit of feedback that made me think that I wasn't supposed to have an entire method in the driver code. 
+
+=end
