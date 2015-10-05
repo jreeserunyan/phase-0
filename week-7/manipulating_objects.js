@@ -1,10 +1,9 @@
  // Manipulating JavaScript Objects
 
-// I worked on this challenge: [by myself, with: ]
-
+// I worked on this challenge: [by Jamie ]
 // There is a section below where you will write your code.
-
 // DO NOT ALTER THIS OBJECT BY ADDING ANYTHING WITHIN THE CURLY BRACES!
+
 var terah = {
   name: "Terah",
   age: 32,
@@ -32,26 +31,26 @@ terah.children.colton = {name: "Colton"};
 
 adam.children = terah.children
 
-
-
-
 // __________________________________________
-// Reflection: Use the reflection guidelines
+// Reflection
 //
 //What tests did you have trouble passing? What did you do to make it pass? Why did that work?
-// I actually didn't find anything that tricky, except that I kept forgetting 
-// that there was more instruction for this assignment than the last one (which was
-// figuring out what needed to be done by looking at the test code), so I just kept 
-// looking at the test code, which helped guide me in the right direction.
+   // I actually didn't find anything that tricky, except that I kept forgetting 
+   // that there was more instruction for this assignment than the last one (which was
+   // figuring out what needed to be done by looking at the test code), so I just kept 
+   // looking at the test code, which helped guide me in the right direction.
 
 // How difficult was it to add and delete properties outside of the object itself?
-// The first few things I tried didn't work, but when I looked it up, 
-// the first source I found showed how to do it pretty clearly.
+   // The first few things I tried didn't work, but when I looked it up, 
+   // the first source I found showed how to do it pretty clearly.
 
 // What did you learn about manipulating objects in this challenge?
-// I defined variables, and used object literal notation to assign variables to empty objects. 
-// Which means I created an object that I subsequently added additional properties (objects with values).
-// I added to and removed properties from outside an object, without modifying it. The way the final terah object printed out was really interesting. The output for spouse was [Circualar], which I had noticed when I was adding the properties and values, that Terah's spouse points to Adam, and Adam's spouse points back to Terah.
+   // I defined variables, and used object literal notation to assign variables to empty objects. 
+   // Which means I created an object that I subsequently added additional properties (objects with values).
+   // I added to and removed properties from outside an object, without modifying it. 
+   // The way the final terah object printed out was really interesting. 
+   // The output for spouse was [Circualar], which I had noticed when I was adding the properties and values, 
+   // that Terah's spouse points to Adam, and Adam's spouse points back to Terah.
 
 
 // __________________________________________
