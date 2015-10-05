@@ -49,7 +49,8 @@ adam.children = terah.children
 // the first source I found showed how to do it pretty clearly.
 
 // What did you learn about manipulating objects in this challenge?
-// I defined variables, and used object literal notation to assign variables to empty objects. Which means I created an object that I subsequently added additional properties (objects with values).
+// I defined variables, and used object literal notation to assign variables to empty objects. 
+// Which means I created an object that I subsequently added additional properties (objects with values).
 // I added to and removed properties from outside an object, without modifying it. The way the final terah object printed out was really interesting. The output for spouse was [Circualar], which I had noticed when I was adding the properties and values, that Terah's spouse points to Adam, and Adam's spouse points back to Terah.
 
 
