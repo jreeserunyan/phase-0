@@ -2,7 +2,7 @@
 Gradebook from Names and Scores
 
 I worked on this challenge [by myself, Jamie Runyan with: Irina]
-This challenge took me [#] hours.
+This challenge took me [3] hours.
 
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -18,18 +18,6 @@ var scores = [ [80, 70, 70, 100],
                [85, 80, 90, 90],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
-
-
-// __________________________________________
-// Write your code below.
-
-var students = ["Joseph", "Susan", "William", "Elizabeth"]
-
-var scores = [ [80, 70, 70, 100],
-               [85, 80, 90, 90],
-               [75, 70, 80, 75],
-               [100, 90, 95, 85] ]
-
 
 // __________________________________________
 // Write your code below.
@@ -77,56 +65,54 @@ var scores = [ [80, 70, 70, 100],
   
 // }
  
-
 // __________________________________________
 // Refactored Solution
 
-var gradebook = {
+gradebook = {
   Joseph: {testScores: scores[0]},
   Susan: {testScores: scores[1]},
   William: {testScores: scores[2]},
   Elizabeth: {testScores: scores[3]},
 
-  addScore: function check (name, score) {
-              if (name in gradebook) {
-                gradebook[name]["testScores"].push(score);
-              }
-              else {
-              console.log("name not found");
-              };
+addScore: function(name, score) {
+          	gradebook[name].testScores.push(score);
             },
 
-  getAverage: function getAverage (name) {
-              var n = name;
-              for (n in gradebook) {
-                var t = gradebook[n]["testScores"];
-              return(average(t));
-              };
-  }            
+getAverage: function(name) {
+              return average(gradebook[name].testScores)
+  			}
 };
 
 function average (array) {
-    total = 0;
-    for ( var index=0; index < array.length; index++) {
-        total += array[index];
+total = 0;
+for (index = 0; index < array.length; index++) {
+    total += array[index];
     }
-    return total/array.length;
-};
+return total/array.length;
+}
 
+// TEST
+console.log(average(scores[3]));
+console.log(average([100, 90, 95, 85]));
 
+/*
+__________________________________________
 
+Reflect
 
+What did you learn about adding functions to objects?
+	There is more than one way to do it. Initially I was declaring var everywhere, but part way through I realized that was unnecessary. 
+	Adding functions is actually a lot easier than I was making it. I started testing with jslint and was able to simplify things so much.
 
+How did you iterate over nested arrays in JavaScript?
+	I iterated over the nested array with a for loop. The index started at zero and added 1 incrementally as long as the index remained less than the array length. When the index reaches the length of the array, the loop stops.
+	The the array length is divided by the total count.
 
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+	I wanted to use "reduce" but I couldn't get it to work right in the amount of time I gave myself. 
+	I am not sure if I used "push" in js before, it did what I expected.
 
-// __________________________________________
-// Reflect
-
-
-
-
-
-
+*/
 
 
 
@@ -142,7 +128,6 @@ function assert(test, message, test_number) {
   console.log(test_number + "true");
   return true;
 }
-
 
 
 assert(

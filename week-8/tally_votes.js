@@ -161,7 +161,6 @@ function addVote(job, candidate){
     if (voteCount.hasOwnProperty(job)){
       voteCount[job].hasOwnProperty(candidate) ? voteCount[job][candidate] += 1 : voteCount[job][candidate] = 1;
     }
-}
 
 function countVote(){
   for (var voterName in votes){
@@ -171,6 +170,9 @@ function countVote(){
      }
     }
   }
+}
+
+
 }
 
 countVote();

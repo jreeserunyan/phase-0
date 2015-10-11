@@ -1,7 +1,4 @@
 <!-- Release 5: SELECTing data from a database -->
-
-
-  
 <!-- 1. Select all data for all states. -->
 	SELECT * FROM states;
 
