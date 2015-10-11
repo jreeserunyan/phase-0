@@ -159,46 +159,47 @@ function findWinner(){
 
 function addVote(job, candidate){
     if (voteCount.hasOwnProperty(job)){
-      voteCount[job].hasOwnProperty(candidate) ? voteCount[job][candidate] += 1 : voteCount[job][candidate] = 1;
+      voteCount[job].hasOwnProperty(candidate) ? 
+      voteCount[job][candidate] += 1 : voteCount[job][candidate] = 1;
     }
+}
 
 function countVote(){
-  for (var voterName in votes){
+  for (voterName in votes){
     if (votes.hasOwnProperty(voterName)) {
-     for (var job in votes[voterName]){
+     for (job in votes[voterName]){
         addVote(job, votes[voterName][job]);
      }
     }
   }
 }
 
-
-}
-
 countVote();
 findWinner();
 console.log(officers);
-
-
-
-
-
-// __________________________________________
-// Refactored Solution
-
-
-
+console.log(voterName + " voted for " + votes[voterName][job] + " for " + job + ". " );
 
 
 
 // __________________________________________
 // Reflection
+/*
+What did you learn about iterating over nested objects in JavaScript?
+  We used a lot of for and for..in constructions since the order of the array items was not important.
+
+Were you able to find useful methods to help you with this? 
+  There were a few other options, but we wanted to stick to something 
+  pretty simple to help solidify our understanding. I think we could have used the 
+  prototype.forEach() method but it wasn't necessary.
+
+What concepts were solidified in the process of working through this challenge?
+  Before this challenge I spent quite a while making my own nested objects and playing with them.
+  But until I worked on this, I thought "hasOwnProperty" was just a made up variable, 
+  rather than an entire method. That was a big help. We re-factored one part of
+  the code to have a ternary operator, which I had done in Ruby but not yet in JS. 
 
 
-
-
-
-
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
