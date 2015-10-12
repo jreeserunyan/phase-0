@@ -1,20 +1,24 @@
 ## 8.5 More Schemas
 
 #### Create a One-to-one Schema
-Consider books. Books always have a distinct title, but when books get published each version of a title (Hardcover, paperback, kindle) has a different ISBN.
-![image1](imgs/1-to-1_schema "One-to-one Schema")
+
+
+![image1](imgs/1-to-1_schema.png "One-to-one Schema")
 
 #### Many to Many Relationships
 Grocery Lists
+
 ![image2](imgs/grocery_list.png "Join Grocery List Schema")
 
-Animated Series (just for practice)
+Animated Series 
+(just for practice)
+
 ![image3](imgs/many-to-many_schema.png "Many-to-many Schema")
 
 
 #### Reflect
 ##### What is a one-to-one database?
-A one-to-one database connects one table to another when info can be considered a "pair". It can be useful to break up info to avoid unnecessary repetition and to minimize space used. Repetitive table info also increases the chance of human error.
+A one-to-one database connects one table to another when info can be considered a "pair". It can be useful to break up info to avoid unnecessary repetition and to minimize space used. Repetitive table info also increases the chance of human error. Consider books. Books always have a titles and authors, but when books get published each version of the book(hardcover, paperback, kindle) needs to have a unique ISBN. 
 
 ##### When would you use a one-to-one database? (Think generally, not in terms of the example you created).
 Whenever you have a set of information that has exactly one possible answer, a one-to-one database could be useful.
