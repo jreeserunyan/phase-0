@@ -22,28 +22,6 @@
 # create fibonacci sequence, test code at bottom returns integer value of "result"
 
 # the fibo
-def fibo(result)
-	if a_result <= 1
-	return fibo(result - 1) + fibo(result - 2)
-end
-
-
-def is_fibonacci?(test_num)
-	result = test_num
-	if test_num == result[-1]
-		return true
-	else
-		return false
-	end
-end
-end
-
-# test fibo
-p fibo(7)
-
-p is_fibonacci?(20)
-
-# Refactored Solution
 
 # def fibo(result)
 # 	return result if result <= 1
@@ -59,34 +37,46 @@ p is_fibonacci?(20)
 # 		return false
 # 	end
 # end
+# end
 
 # # test fibo
 # p fibo(7)
+# p is_fibonacci?(20)
 
-# p is_fibonacci?(377)
+# Refactored Solution
 
-
-# def is_fibonacci?(result)
-# 	fibo_num = (0..1)
-# 	return result if result <= 1
-# 	fibo(result - 1) + fibo(result - 2)
-# 	fibo_num << result
-# 	end
+def fibo(result)
+	return result if result <= 1
+	fibo(result - 1) + fibo(result - 2)
+end
 
 
-# 	if num[-1] == result
-# 		return true
-# 	else
-# 		return false
-# 	end
-# end
-# end
+def is_fibonacci?(test_num)
+	fibo = [1, 1]
+	until fibo.last >= test_num do
+		fibo << fibo[-2] + fibo.last
+	end
 
-# p fibo(3)
-# p is_fibonacci?(10)
+	fibo.last == test_num ? true : false
+end
+
+# test fibo
+p fibo(7)
+p is_fibonacci?(15)
+
+
 
 
 
 
 # Reflection
 # tried using if range (0..1), didn't work.
+# What concepts did you review or learn in this challenge?
+# Everything is a bit jumbled right now. I want to go over this whole thing again and do a better job refactoring.
+# What is still confusing to you about Ruby?
+# I keep forgetting little details that are totally important.
+# What are you going to study to get more prepared for Phase 1?
+# Everything! I got mixed up on how to put a method inside a method.  I keep thinking in terms of JS.
+
+
+
