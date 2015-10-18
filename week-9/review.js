@@ -1,4 +1,4 @@
-// 9.2.1 JavaScript Grocery List
+ // 9.2.1 JavaScript Grocery List
 
 // User Stories:
 // A user wants to start with an empty list.
@@ -37,53 +37,54 @@ output: attractively displayed info
 	sort alphabetically
 
 */
-// 	newItem = 
-// 	if newItem
+
+// simple version:
+// var groceries = [];
+// for (var i = 0; i < groceries.length; i++) {
+//     var item = groceries[i];
 // }
+// groceries.push("bread", "cheese", "tomato soup", "butter", "basil");
+// groceries.push("apples");
+// delete groceries.bread;
+// console.log(groceries);
 
-// newList.prototype.array = function() {
-// console.log(this.item);
-// };
 
-// var newObject = newList("apples");
 
-function newList(index, item, quantity) {
-this.index = index;
-this.item = item;
-this.quantity = quantity;
+
+function newList() {
 }
 
-//function addvote(job, name){
-//     if (voteCount.hasOwnProperty(job)){
-
-//       if(voteCount[job].hasOwnProperty(name)){
-//         voteCount[job][name] += 1;
-//       }
-//       else{
-//         voteCount[job][name] = 1;
-//       }
-//     }
-// }
-function newItem(qty, item){
-	var totalItemQty = 0
-	var itemName;
-    if (itemName.hasOwnProperty(item)){
-
-      if(itemName.hasOwnProperty(name)){
-        itemName += 1;
-      }
-      else{
-        it[job][name] = 1;
-      }
-    }
+newList.prototype.addItem = function (list, item, qty) {
+  list[item] = qty;
 }
 
+newList.prototype.removeItem = function (list, item) {
+  delete list[item];
+}
 
-// function newItem(qty, item) {
-// 	var totalItemQty = 0
-// 	var itemName;
-// 	for var i = 0: i < totalItemQty.length: i++) {
-// 	// console.log(totalItemQty);
-// }
+newList.prototype.updateQuantity = function (list, item, newqty) {
+  list[item] = newqty;
+}
 
-newItem(5, "apples")
+// Driver Code
+var groceries = new newList();
+groceries.addItem(groceries, "bread", 1)
+groceries.addItem(groceries, "basil", 1)
+groceries.addItem(groceries, "apples", 10)
+groceries.addItem(groceries, "cheese", 2)
+groceries.addItem(groceries, "tomato soup", 5)
+groceries.addItem(groceries, "butter", 1)
+groceries.removeItem(groceries, "basil")
+groceries.updateQuantity(groceries, "apples", 3)
+console.log(groceries)
+
+// reflection
+// What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+// I felt I was able to attack this much better than I expected. Having done it before, 
+// even if it was a different language and quite a while ago, made it a pretty smooth process.
+// What was the most difficult part of this challenge?
+// I kept over-complicating the assignment because I was wary of prototype objects, but once I accepted them, things worked well.
+// Did an array or object make more sense to use and why?
+// The first time i had used a hash, and since in some ways, an object in js is a lot like a hash, I went that route.
+// I wrote the psuedocode as if i were doing a much fancier list, but that was fun even if I didn't use it much.
+
